@@ -52,7 +52,7 @@ Other relatively smaller categories include:
 - **Senior Job Level:** **20.10%**
 - **Excellent Company Reputation:** **10.04%**
 
-These smaller categories should be interpreted carefully because their attrition rates may be influenced by their smaller sample sizes.
+These smaller categories should be interpreted carefully because their attrition rates may be influenced by smaller sample sizes.
 
 ---
 
@@ -129,17 +129,13 @@ Correlation analysis was performed to examine linear relationships between numer
 
 The correlation between Age and Monthly Income is **-0.00**, indicating almost no linear relationship between the two variables.
 
-The scatter plot also shows that Monthly Income is widely distributed across different age groups.
-
 **Conclusion:** Age does not appear to be strongly associated with Monthly Income in this dataset.
 
 ### 2. Age vs Years at Company
 
 The correlation between Age and Years at Company is **0.54**, indicating a **moderate positive relationship**.
 
-The scatter plot shows an upward pattern, suggesting that older employees generally tend to have more years at the company.
-
-**Conclusion:** Age and Years at Company have a noticeable positive relationship.
+**Conclusion:** Older employees generally tend to have more years at the company.
 
 ### 3. Years at Company vs Monthly Income
 
@@ -151,7 +147,7 @@ The correlation between Years at Company and Monthly Income is **-0.01**, indica
 
 The correlation between Number of Promotions and Years at Company is **-0.00**, indicating almost no linear relationship.
 
-**Conclusion:** The number of promotions does not appear to be strongly associated with Years at Company in this dataset.
+**Conclusion:** The number of promotions does not appear to be strongly associated with Years at Company.
 
 ### 5. Distance from Home vs Attrition
 
@@ -163,19 +159,17 @@ Distance from Home was divided into groups to compare attrition rates:
 - **21–30:** 42.74%
 - **31+:** 49.91%
 
-The **31+ distance group has the highest attrition rate at 49.91%**, while the **11–20 group has the lowest at 41.53%**.
+The **31+ group has the highest attrition rate at 49.91%**, while the **11–20 group has the lowest at 41.53%**.
 
 **Conclusion:** Employees living farther from the workplace, particularly those in the 31+ group, show somewhat higher attrition. However, the differences across most groups are relatively small.
 
 ### 6. Training Hours vs Attrition
 
-The dataset does not contain a **Training Hours** column. Therefore, the relationship between Training Hours and Attrition could not be analyzed.
+The dataset does not contain a **Training Hours** column. Therefore, this relationship could not be analyzed.
 
----
+### 7. Correlation Matrix / Heatmap
 
-## 7. Correlation Matrix / Heatmap
-
-A correlation heatmap was created to examine linear relationships among the numerical variables.
+The correlation heatmap provides an overall view of the relationships among numerical variables.
 
 The strongest relationships observed were:
 
@@ -183,9 +177,7 @@ The strongest relationships observed were:
 - **Years at Company ↔ Company Tenure:** **0.44**
 - **Age ↔ Company Tenure:** **0.24**
 
-Most other numerical variables showed very weak linear correlations.
-
-**Conclusion:** Age, Years at Company, and Company Tenure show the most noticeable numerical relationships, while Monthly Income, Number of Promotions, Distance from Home, and Number of Dependents have relatively weak linear relationships with the other numerical variables.
+Most other numerical variables showed weak or negligible linear correlations.
 
 Employee ID was not interpreted because it is an identifier rather than a meaningful analytical variable.
 
@@ -197,33 +189,25 @@ Normalized cross-tabulations and heatmaps were used to examine relationships bet
 
 ### 8. Job Satisfaction vs Work-Life Balance
 
-The distributions of Work-Life Balance were highly similar across Job Satisfaction levels.
+The distributions of Work-Life Balance were highly similar across Job Satisfaction levels. Good Work-Life Balance ranged from **37.07% to 38.11%** across satisfaction categories.
 
-For example, Good Work-Life Balance ranged from **37.07% to 38.11%** across satisfaction categories.
-
-**Conclusion:** Job Satisfaction and Work-Life Balance do not show a strong categorical relationship in this dataset.
+**Conclusion:** Job Satisfaction and Work-Life Balance do not show a strong categorical relationship.
 
 ### 9. Job Satisfaction vs Performance Rating
 
-Performance Rating was distributed very similarly across Job Satisfaction levels.
-
-Average Performance Rating ranged from **59.88% to 60.67%**, while High Performance Rating ranged from **19.70% to 20.11%**.
+Performance Rating was distributed very similarly across Job Satisfaction levels. Average Performance Rating ranged from **59.88% to 60.67%**, while High Performance Rating ranged from **19.70% to 20.11%**.
 
 **Conclusion:** Job Satisfaction and Performance Rating do not show a strong categorical relationship.
 
 ### 10. Employee Recognition vs Job Satisfaction
 
-Job Satisfaction distributions were highly similar across Employee Recognition levels.
-
-High Job Satisfaction ranged from **48.80% to 50.32%**, while Low Job Satisfaction ranged from **9.58% to 10.08%**.
+Job Satisfaction distributions were highly similar across Employee Recognition levels. High Job Satisfaction ranged from **48.80% to 50.32%**, while Low Job Satisfaction ranged from **9.58% to 10.08%**.
 
 **Conclusion:** Employee Recognition and Job Satisfaction do not show a strong categorical relationship.
 
 ### 11. Remote Work vs Work-Life Balance
 
 Work-Life Balance distributions were almost identical between remote and non-remote employees.
-
-For example:
 
 - Good WLB: **37.88%** for non-remote vs **37.44%** for remote
 - Poor WLB: **13.92%** for non-remote vs **14.01%** for remote
@@ -234,11 +218,11 @@ For example:
 
 A normalized cross-tabulation and heatmap were created to examine the relationship between Overtime and Work-Life Balance.
 
-**Conclusion:** The final interpretation should be added after reviewing the generated output.
+**Conclusion:** Interpretation pending review of the generated output.
 
 ### 13. Leadership Opportunities vs Job Level
 
-The distribution of Job Level was very similar among employees with and without leadership opportunities.
+The Job Level distribution was very similar among employees with and without leadership opportunities.
 
 - Entry: **40.01%** without vs **40.85%** with opportunities
 - Mid: **39.89%** without vs **39.10%** with opportunities
@@ -250,15 +234,9 @@ The distribution of Job Level was very similar among employees with and without 
 
 The distribution of Job Roles was highly similar among employees with and without innovation opportunities.
 
-Technology represented:
+Technology represented **26.00%** among employees without innovation opportunities and **26.14%** among employees with opportunities.
 
-- **26.00%** among employees without innovation opportunities
-- **26.14%** among employees with innovation opportunities
-
-Finance represented:
-
-- **14.07%** among employees without innovation opportunities
-- **14.08%** among employees with innovation opportunities
+Finance represented **14.07%** among employees without innovation opportunities and **14.08%** among employees with opportunities.
 
 **Conclusion:** Innovation Opportunities and Job Role do not show a strong categorical relationship.
 
@@ -281,29 +259,18 @@ Other high-attrition combinations included:
 
 These results suggest that multiple employee and workplace factors may interact and collectively be associated with employee attrition.
 
-Because combination-based groups may contain fewer observations than the overall dataset, these high attrition rates should be interpreted alongside their corresponding sample sizes.
+Because combination-based groups may contain fewer observations, these high attrition rates should be interpreted alongside their corresponding sample sizes.
 
 ---
 
 # Overall EDA Insights
 
-The analysis indicates that employee attrition is associated with several employee, job, and workplace characteristics.
+The exploratory analysis identified several employee, job, and workplace characteristics associated with attrition.
 
-The strongest patterns were observed for:
+The strongest categorical variation was observed for **Job Level**, followed by **Marital Status, Remote Work, Work-Life Balance, and Education Level**.
 
-- **Job Level**
-- **Marital Status**
-- **Work-Life Balance**
-- **Remote Work**
-- **Company Reputation**
-- **Age Group**
-- **Years at Company**
-- **Overtime**
+The combination analysis identified **Entry-level employees working overtime with Poor Work-Life Balance** as the group with the highest observed attrition rate (**80.16%**).
 
-Among the categorical variables analyzed, **Job Level showed the largest difference in attrition rates**, with a **42.88 percentage-point gap** between Entry-level and Senior-level employees.
-
-The combination analysis further identified **Entry-level employees working overtime with Poor Work-Life Balance** as the group with the highest observed attrition rate (**80.16%**).
-
-The numerical relationship analysis showed a moderate positive relationship between **Age and Years at Company (0.54)**, while most other numerical variable pairs showed weak or negligible linear relationships.
+Numerically, **Age and Years at Company** showed the strongest relationship (**0.54**), while most other numerical variable pairs showed weak or negligible linear relationships.
 
 Overall, these findings provide useful directions for **feature engineering, statistical testing, and employee attrition prediction modeling**. However, the observed relationships represent **associations rather than causal relationships**.
