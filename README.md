@@ -115,12 +115,4 @@ Other combinations also showed high attrition rates, including:
 
 These results suggest that **multiple employee and workplace factors may interact with each other and collectively be associated with employee attrition**.
 
-### Machine Learning Relevance
 
-Understanding categorical distributions and attrition rates is important before building an employee attrition prediction model.
-
-Highly imbalanced categories should be interpreted carefully because a small category can produce unstable or misleading attrition rates. Therefore, both **attrition percentage and sample size** should be considered together.
-
-The analysis also identified potentially important features such as **Job Level, Marital Status, Remote Work, Work-Life Balance, Age Group, Overtime, and Company Reputation** for further feature engineering and machine learning analysis.
-
-However, these EDA findings represent **associations rather than causal relationships**. Statistical testing and machine learning model evaluation should be used to determine whether these features provide significant predictive value for employee attrition.
